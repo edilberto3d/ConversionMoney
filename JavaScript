@@ -1,0 +1,99 @@
+var resultadod;
+var resltadop;
+var cant;
+function valor1()
+{
+        cant=document.getElementById("valor").value
+        cant=Number.parseFloat(cant)
+        console.log(cant);
+}
+function PesoDolar(){
+    if(cant>0 && cant<=1){
+        
+resultadod=cant/17.24
+
+document.getElementById("registro").innerHTML +='<p>'+cant+' peso mexicanos en dolares es= '+resultadod+'</p>'
+    }
+    else if(cant>1){
+        resultadod=cant/17.24
+        document.getElementById("registro").innerHTML +='<p>'+cant+' pesos mexicanos en dolares es= '+resultadod+'</p>'
+    }
+    else{
+        alert("Inserte el valor a correctamente")
+    }
+}
+function DolarPeso(){
+    if(cant>0 && cant<=1){
+resultadop=cant*17.24;
+document.getElementById("registro").innerHTML +='<p>'+cant+' dolar en pesos mexicanos es= '+resultadop+'</p>'
+    }
+    else if(cant>1){
+        resultadop=cant*17.24;
+        document.getElementById("registro").innerHTML +='<p>'+cant+' dolares en pesos mexicanos es= '+resultadop+'</p>'
+
+
+    }
+    else{
+        alert("¡¡¡¡Inserte un valor en la caja de texto!!")
+    }
+
+}
+function ArgentinoMexicano(){
+    var resultadoarg=cant*0.070
+    if(cant>0 && cant<=1){
+        document.getElementById("registro").innerHTML +='<p>'+cant+' peso argentinos en pesos mexicanos es= '+resultadoarg+'</p>'
+    }
+    else if(cant>1){
+        resultadoarg=cant*0.070
+        document.getElementById("registro").innerHTML +='<p>'+cant+' pesos argentinos en pesos mexicanos es= '+resultadoarg+'</p>'
+      
+    }
+    else{
+     alert("Inserte correctamente el valor, no se aceptan numeros negativos")
+    }
+}
+function PesomxArgentina(){
+    var resultadomxar=cant*14.34
+    if(cant>0 && cant<=1){
+    document.getElementById("registro").innerHTML +='<p>'+cant+' peso mexicanos en pesos argentinos es= '+resultadomxar+'</p>'
+    }
+    else if(cant>1){
+        resultadomxar=cant*14.34
+        document.getElementById("registro").innerHTML +='<p>'+cant+' pesos mexicanos en pesos argentinos es= '+resultadomxar+'</p>'
+    }
+    else{
+        alert("Inserte correctamente el valor, no se aceptan numeros negativos")
+    }
+}
+function PesoEuros(){
+    var peresul=cant *0.054
+    if(cant>0 && cant<=1){
+    document.getElementById("registro").innerHTML +='<p>'+cant+' peso mexicanos en euros es= '+peresul+'</p>'
+    }
+    else if(cant>1){
+        document.getElementById("registro").innerHTML +='<p>'+cant+' pesos mexicanos en euros es= '+peresul+'</p>'
+    
+    }
+    else{
+        alert("Inserte correctamente el valor, no se aceptan numeros negativos") 
+    }
+
+}
+ function EurosPesos(){
+    resultado=cant*18.60;
+    if(cant>0 && cant<=1){
+    document.getElementById("registro").innerHTML +='<p>'+cant+' euro a peso mexicano es= '+resultado+'</p>'
+    }
+    else if(cant>1){
+        document.getElementById("registro").innerHTML +='<p>'+cant+' euros a peso mexicano es= '+resultado+'</p>'
+    }
+    else{
+        alert("Inserte correctamente el valor, no se aceptan numeros negativos")  
+    }
+    
+ }
+
+function borrar(){
+    var lista=document.getElementById("registro")
+    lista.removeChild(lista.children[0])
+}
