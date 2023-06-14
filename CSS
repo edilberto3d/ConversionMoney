@@ -1,0 +1,34 @@
+.container {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 60px;
+    background-image: url(/css/fondos-de-pantalla-canalapps.jpg);
+    border-radius: 90px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+ 
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  h3 {
+    text-align: center;
+    color: #44fe63;
+  }
+  
+  p {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #858981;
+  
+  }
+  label{
+    color: rgb(79, 173, 255);
+  }
+
