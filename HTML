@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones_p_d</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>CONVERSION</h1>
+    
+    <div>
+        
+        <label form="valor">Insertar el valor</label>
+        <input type="number" name="valor" id="valor" placeholder="insertar el valor"  onblur="valor1()" value="0" required>
+    </div>
+<div>
+    <h3>Selecciona la conversio que quiera hacer:</h3>
+</div>
+<div>
+    <button id="pd" name="pd" onclick="PesoDolar()">PesoMX-DolarUSA</button>
+    <button id="dp" name="dp" onclick="DolarPeso()">DolarUSA-PesoMX</button>
+    
+</div>
+<br>
+<div>
+    <button id="da" name="da" onclick="ArgentinoMexicano()">PesoArgentino-PesoMX</button>
+    <button id="pa" name="pa" onclick="PesomxArgentina()">PesoMX-PesoArgentino</button>
+    
+</div>
+<br>
+<div>
+    <button id="euros" name="dp" onclick="PesoEuros()">PesoMX-Euros</button>
+    <button id="eurosp" name="dp" onclick="EurosPesos()">Euros-PesoMX</button>
+    
+</div>
+<br>
+<div>
+    <button id="elimar" name="elimar" onclick="borrar()">Borrar</button>
+</div>
+<h3>Registro:</h3>
+<p id="registro" class="centerb"></p>
+</div>
+<script src="/javascipt/conversion.js"></script>
+</body>
+</html> 
