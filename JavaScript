@@ -97,3 +97,9 @@ function borrar(){
     var lista=document.getElementById("registro")
     lista.removeChild(lista.children[0])
 }
+
+function limpiar() {
+    // Limpiar los campos
+    document.getElementById("valor").value = "";
+    
+  }
